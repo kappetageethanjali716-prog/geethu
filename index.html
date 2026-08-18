@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algorithm Knows You Too Well</title>
+    <meta
+      name="description"
+      content="Hackathon demo showing explainable tech Reel recommendations based on semantic engagement patterns."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <div class="brand-mark">AK</div>
+          <div>
+            <p class="eyebrow">Explainable AI recommender</p>
+            <h1>Algorithm Knows You Too Well</h1>
+          </div>
+        </div>
+        <button id="analyzeButton" class="primary-btn">Analyze My Reels</button>
+      </header>
+
+      <main class="dashboard">
+        <section class="hero panel glass">
+          <div class="profile-card">
+            <div class="avatar">V</div>
+            <div>
+              <p class="label">Demo user</p>
+              <h2>Vaishu Sharma</h2>
+              <p class="muted">Computer Science · Backend & Security</p>
+            </div>
+          </div>
+
+          <div class="profile-metrics">
+            <div>
+              <span class="badge accent">Tier</span>
+              <strong>AI-curious builder</strong>
+            </div>
+            <div>
+              <span class="badge accent">Focus</span>
+              <strong>Secure systems + interviews</strong>
+            </div>
+            <div>
+              <span class="badge accent">Signals</span>
+              <strong>8 Reels analyzed</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel glass reel-panel">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Reel scan</p>
+              <h3>Engagement signals from your watch history</h3>
+            </div>
+          </div>
+          <div id="reelSignalList" class="reel-signal-list"></div>
+        </section>
+
+        <section class="interest-summary panel glass">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Semantic inference</p>
+              <h3>Top 3 inferred technology interests</h3>
+            </div>
+            <span class="pill">AI explained</span>
+          </div>
+          <div id="interestGrid" class="interest-grid"></div>
+        </section>
+
+        <section class="panel glass split-layout">
+          <div>
+            <div class="section-heading compact">
+              <div>
+                <p class="eyebrow">Engagement pattern</p>
+                <h3>Engagement-to-interest visualization</h3>
+              </div>
+            </div>
+            <svg id="engagementChart" viewBox="0 0 540 240" role="img" aria-label="Interest engagement chart"></svg>
+          </div>
+
+          <div class="insight-box">
+            <p class="eyebrow">Decision logic</p>
+            <ul id="insightList" class="insight-list"></ul>
+          </div>
+        </section>
+
+        <section class="panel glass">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Recommended</p>
+              <h3>Recommended technology Reels</h3>
+            </div>
+          </div>
+          <div id="recommendationList" class="recommendation-list"></div>
+        </section>
+
+        <section class="panel glass rejection-panel">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Anti-clickbait filter</p>
+              <h3>Rejected content</h3>
+            </div>
+          </div>
+          <div id="rejectedList" class="rejected-list"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
