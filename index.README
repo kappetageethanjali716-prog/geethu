@@ -1,0 +1,47 @@
+# Algorithm Knows You Too Well
+
+A polished hackathon demo that analyzes sample Reel engagement patterns and explains why a user is likely interested in certain technology domains.
+
+## Features
+
+- Modern responsive dashboard UI
+- "Analyze My Reels" interaction
+- Realistic sample Reel data for immediate use
+- Top 3 inferred technology interests
+- Explainable recommendations using semantic engagement logic
+- Rejected clickbait content with reasons
+- Confidence score and difficulty labels
+- Engagement-to-interest visualization
+- Demo user profile
+
+## Run locally
+
+From the project folder:
+
+```bash
+cd c:/Users/gkbgo/OneDrive/Desktop/geethu
+python -m http.server 8000
+```
+
+Then open:
+
+```text
+http://localhost:8000
+```
+
+If your system uses Python 3 explicitly:
+
+```bash
+cd c:/Users/gkbgo/OneDrive/Desktop/geethu
+python3 -m http.server 8000
+```
+
+## Files
+
+- `index.html` – dashboard shell
+- `styles.css` – responsive visual design
+- `script.js` – sample data and explainable recommendation logic
+
+## Notes
+
+The recommendation engine is intentionally semantic, not simple keyword matching. It weighs engagement patterns such as watch share, rewatch behavior, saves, and comment depth to infer stronger signals than surface-level content labels.
